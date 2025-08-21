@@ -26,7 +26,7 @@ struct SettingsScreenView: View {
                 title: "Terms and Conditions",
                 subtitle: "Review our terms of service",
                 action: {
-                    viewModel.openURL("https://google.com")
+                    viewModel.openURL("https://sites.google.com/adforcegroup.com/id-6751351335")
                 }
             )
             
@@ -35,7 +35,7 @@ struct SettingsScreenView: View {
                 title: "Privacy Policy",
                 subtitle: "How we protect your data",
                 action: {
-                    viewModel.openURL("https://google.com")
+                    viewModel.openURL("https://sites.google.com/adforcegroup.com/id6751351335")
                 }
             )
             
@@ -44,7 +44,7 @@ struct SettingsScreenView: View {
                 title: "Contact Us",
                 subtitle: "Get help and support",
                 action: {
-                    viewModel.openURL("https://google.com")
+                    viewModel.openURL("https://forms.gle/JdLau6UAtPjbv5Wc7")
                 }
             )
             
