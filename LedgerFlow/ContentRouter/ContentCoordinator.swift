@@ -58,7 +58,7 @@ internal final class ContentCoordinator: ObservableObject {
         }
         
         let releaseDate = Calendar.current.date(
-            from: DateComponents(year: 2025, month: 8, day: 24)
+            from: DateComponents(year: 2025, month: 9, day: 1)
         )
         if let releaseDate = releaseDate, Date() < releaseDate {
             print("[APP:Coordinator] ⏰ Release date in future, activating basic")
