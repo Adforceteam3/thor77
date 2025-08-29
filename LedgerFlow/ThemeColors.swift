@@ -1,5 +1,9 @@
 import SwiftUI
 
+struct Theme {
+    static let primary = Color(hex: "004DE5")
+}
+
 struct ThemeColors {
     static let primary = Color(hex: "004DE5")
     static let accent = Color(hex: "009DFE")

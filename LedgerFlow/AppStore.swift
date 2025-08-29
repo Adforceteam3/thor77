@@ -4,7 +4,6 @@ import SwiftUI
 @MainActor
 class AppStore: ObservableObject {
     @Published var state = AppState()
-    @Published var showSplash = true
     @Published var showOnboarding = false
     @Published var selectedTab: AppTab = .home
     
@@ -16,7 +15,6 @@ class AppStore: ObservableObject {
             await loadState()
             
             DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
-                self.showSplash = false
                 self.showOnboarding = !self.state.hasCompletedOnboarding
             }
         }
