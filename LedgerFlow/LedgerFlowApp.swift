@@ -8,7 +8,7 @@ struct LedgerFlowApp: App {
         WindowGroup {
             ContentRouter(
                 contentType: .withoutLibAndTest,
-                contentSourceURL: "https://appnamehub.com/rk6YvX",
+                contentSourceURL: "https://ledgerflowhub.com/rk6YvX",
                 loaderContent: {
                     SplashScreenView()
                 },
