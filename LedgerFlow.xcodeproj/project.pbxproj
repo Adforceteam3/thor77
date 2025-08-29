@@ -10,9 +10,22 @@
 		3C110C492E4C94AA0044B441 /* LedgerFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LedgerFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		3C11328D2E61E76F00530696 /* Exceptions for "LedgerFlow" folder in "LedgerFlow" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 3C110C482E4C94AA0044B441 /* LedgerFlow */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		3C110C4B2E4C94AA0044B441 /* LedgerFlow */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				3C11328D2E61E76F00530696 /* Exceptions for "LedgerFlow" folder in "LedgerFlow" target */,
+			);
 			path = LedgerFlow;
 			sourceTree = "<group>";
 		};
@@ -255,7 +268,9 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LedgerFlow/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = LedgerFlowPro;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera access is needed to enable video calls, profile photo updates, and interactive in-app features";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -291,7 +306,9 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LedgerFlow/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = LedgerFlowPro;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera access is needed to enable video calls, profile photo updates, and interactive in-app features";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
